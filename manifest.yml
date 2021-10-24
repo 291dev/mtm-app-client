@@ -1,0 +1,6 @@
+applications:
+  - name: my-task-manager
+    path: ./build/
+    random-route: true
+    memory: 128M
+    command: serve -s . -p 8080

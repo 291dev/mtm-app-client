@@ -1,0 +1,108 @@
+.calendar- {
+  &not-this-month {
+    color: rgba($color: #000000, $alpha: 0.2);
+  }
+
+  &header-contents {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // &each-cell {
+  //   min-width: 30px;
+  //   max-width: 80px;
+  //   padding: 4px !important;
+  // }
+
+  &date {
+    background-color: rgba($color: #04a3ff, $alpha: 0.05);
+    height: 100%;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  &inner-cell {
+    height: 60px;
+    overflow: auto;
+  }
+
+  &year {
+    font-style: italic;
+  }
+
+  &today {
+    background-color: antiquewhite;
+  }
+
+  &form > div {
+    margin-bottom: 10px;
+  }
+  &form > div:last-child {
+    margin-bottom: none;
+  }
+
+  &daily-schedule > div {
+    margin-top: 2px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &daily-schedule-0 {
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    padding: 0.3rem;
+    overflow-x: auto;
+    font-size: 0.7em;
+    border-radius: 10px;
+    white-space: nowrap;
+    text-align: left;
+  }
+  &daily-schedule-1:hover {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+  }
+
+  &daily-schedule-1 {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #007bff, $alpha: 0.2);
+  }
+  &daily-schedule-1:hover {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #007bff, $alpha: 0.4);
+  }
+  &daily-schedule-2 {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #04ff9f, $alpha: 0.3);
+  }
+  &daily-schedule-2:hover {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #04ff9f, $alpha: 0.5);
+  }
+
+  &daily-schedule-3 {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #fff704, $alpha: 0.6);
+  }
+
+  &daily-schedule-3:hover {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #fff704, $alpha: 0.9);
+  }
+
+  &daily-schedule-4 {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #ffb004, $alpha: 0.5);
+  }
+
+  &daily-schedule-4:hover {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #ffb004, $alpha: 0.7);
+  }
+
+  &daily-schedule-5 {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #ff0000, $alpha: 0.3);
+  }
+  &daily-schedule-5:hover {
+    @extend .calendar-daily-schedule-0;
+    background-color: rgba($color: #ff0000, $alpha: 0.5);
+  }
+}

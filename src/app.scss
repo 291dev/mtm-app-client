@@ -1,0 +1,36 @@
+.centering {
+  text-align: center;
+}
+
+.contents-aline {
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.title {
+  text-align: center;
+  font-style: italic;
+}
+
+.mg-t-5 {
+  margin-top: 5px;
+}
+
+.mg-t-10 {
+  margin-top: 10px;
+}
+
+.centering-w {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centering-h {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+label {
+  color: rgba($color: #000000, $alpha: 0.6);
+}
